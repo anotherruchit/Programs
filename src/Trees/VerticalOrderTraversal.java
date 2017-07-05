@@ -7,6 +7,8 @@ import java.util.List;
 
 /**
  * Created by ruchitmehta.
+ * https://www.interviewbit.com/problems/vertical-order-traversal-of-binary-tree/
+ * http://www.programcreek.com/2014/04/leetcode-binary-tree-vertical-order-traversal-java/
  */
 public class VerticalOrderTraversal {
 
@@ -26,15 +28,9 @@ public class VerticalOrderTraversal {
         TreeNode n5 = new TreeNode(9);
         n2.right = n5;
 
-//        TreeNode n6 = new TreeNode(18);
-//        TreeNode n1 = new TreeNode(12);
-//        TreeNode n2 = new TreeNode(14);
-//        tree.root.right.left.left = n1;
-//        tree.root.right.left.right = n2;
-
         List<List<Integer>> result = tree.verticalTraversalOrder(root);
         for(List<Integer> list: result){
-            
+            System.out.println(list.toString());
         }
 
     }
@@ -80,9 +76,8 @@ public class VerticalOrderTraversal {
 
             if(curr.right != null){
                 queue.offer(curr.right);
-                level.offer(lev - 1);
+                level.offer(lev + 1);
             }
-
         }
 
         for(int i = minLevel; i <= maxLevel; i++){
