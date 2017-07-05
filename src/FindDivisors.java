@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by dharabavishi on 6/20/17.
+ * Created by ruchitmehta.
  * http://www.geeksforgeeks.org/find-divisors-natural-number-set-1/
  */
 public class FindDivisors {

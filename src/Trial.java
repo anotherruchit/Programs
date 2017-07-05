@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * Created by dharabavishi on 6/20/17.
+ * Created by ruchitmehta.
  * http://www.geeksforgeeks.org/sort-elements-basis-number-factors/
  * Time Complexity: O(n √n)
  */

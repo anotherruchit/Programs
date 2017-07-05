@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by dharabavishi on 6/20/17.
+ * Created by ruchitmehta.
  * http://www.vogella.com/tutorials/JavaAlgorithmsPrimeFactorization/article.html
  * This program will print 'all' prime factors of a number (i.e. including repetition). This is different than printing
  * all 'unique' prime factors of a number
