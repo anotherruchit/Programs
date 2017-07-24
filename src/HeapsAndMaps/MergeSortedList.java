@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
- * Created by dharabavishi on 6/28/17.
+ * Created by ruchitmehta
  * https://www.interviewbit.com/problems/merge-k-sorted-lists/
  *
  Merge k sorted linked lists and return it as one sorted list.

@@ -7,29 +7,27 @@ package Strings;
 public class Pallindrome {
     public static void main(String args[]){
         String str = "A man, a plan, a canal: Panama";
-        System.out.println(isPallindrome(str));
-        System.out.println(isPallindrome("ruchit"));
+        System.out.println(palindromeCheck(str));
+        System.out.println(palindromeCheck("ruchit"));
     }
 
-    public static int isPallindrome(String str){
-        if(str.length() == 1)
-            return 1;
+    public static int palindromeCheck(String str){
+        if(str.length() == 1 || str.length() == 0)
+            return 0;
 
-        StringBuffer builder = new StringBuffer();
-
-        for(int i = 0; i < str.length(); i++){
+        StringBuilder builder = new StringBuilder();
+        for(int i = 0; i <  str.length(); i++){
             if((str.charAt(i) >= 'a' && str.charAt(i) <= 'z') || (str.charAt(i) >= 'A' && str.charAt(i) <= 'Z') ||
-                    (str.charAt(i) >= '0' && str.charAt(i) <= '9')){
+                    (str.charAt(i) >= '0' && str.charAt(i) <= '9'))
                 builder.append(Character.toLowerCase(str.charAt(i)));
-            }
+
         }
 
-        String string = builder.toString();
-
-        int n = string.length();
+        str = builder.toString();
+        int n = str.length();
 
         for(int i = 0; i < n/2; i++){
-            if(string.charAt(i) != string.charAt(n-i-1))
+            if(str.charAt(i) != str.charAt(n-i-1))
                 return 0;
         }
 

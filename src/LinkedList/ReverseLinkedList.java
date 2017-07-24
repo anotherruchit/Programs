@@ -16,6 +16,9 @@ public class ReverseLinkedList {
         n3.next = n4;
         ListNode head = reverseLinkedList(n1);
         printLinkedList(head);
+
+        head = reverse(n1);
+        printLinkedList(head);
     }
 
     public static void printLinkedList(ListNode head){
@@ -39,6 +42,20 @@ public class ReverseLinkedList {
             curr.next = prev;
             prev = curr;
             curr = tempNode;
+        }
+
+        return prev;
+    }
+
+    static ListNode reverse(ListNode head){
+        ListNode curr, next, prev = null;
+        curr = head;
+
+        while(curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
         }
 
         return prev;
