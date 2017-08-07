@@ -10,7 +10,7 @@ public class SmallestSequenceWithPrimes {
     public static void main(String args[]){
         SmallestSequenceWithPrimes primo = new SmallestSequenceWithPrimes();
         System.out.println(primo.smallestSequenceWithPrime(2,3,5,5).toString());
-        System.out.println(primo.smallestSequenceWithPrime(17,19,13,5).toString());
+        System.out.println(primo.smallestSequenceWithPrime(17,19,87,5).toString());
     }
 
     public ArrayList<Integer> smallestSequenceWithPrime(int a, int b, int c, int k){
@@ -36,6 +36,7 @@ public class SmallestSequenceWithPrimes {
                 if(minNumber == nextBestNumber[i]){
                     currValue[i]++;
                     nextBestNumber[i] = result.get(currValue[i])*primeNumber[i];
+                    System.out.println("next best number " + nextBestNumber[i]);
                 }
             }
         }

@@ -1,7 +1,7 @@
 package DynamicProgramming;
 
 /**
- * Created by dharabavishi on 7/3/17.
+ * Created by ruchitmehta
  * https://leetcode.com/problems/edit-distance/#/solutions
  *
  *  Time Complexity: O(m x n)

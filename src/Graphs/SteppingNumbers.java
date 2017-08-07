@@ -10,7 +10,7 @@ import java.util.Queue;
  */
 public class SteppingNumbers {
     public static void main(String args[]){
-        int n = 0, m = 21;
+        int n = 12, m = 200;
 
         // Display Stepping Numbers in
         // the range [n,m]

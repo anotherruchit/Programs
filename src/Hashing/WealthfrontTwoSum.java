@@ -66,7 +66,7 @@ public class WealthfrontTwoSum {
                 result.add(pair);
                 // important : to remove the entry from the hashmap so that it does not
                 // create duplicate entry in output
-                map.remove(numbers.get(i), numbers.get(i));
+                map.remove(numbers.get(i));
 
             }
         }
@@ -80,7 +80,7 @@ public class WealthfrontTwoSum {
         // important how to define Long
         List<Long> input = Arrays.asList(3L, 1L, 2L, 300L, 1000L, 400L, 200L, 750L, -150L, 300L);
         // important : how to override toString method so that it gives output instead of reference
-        System.out.println(findSummingPairs(input, 600L));
+        System.out.println(findSummingPairs(input, 600L).toString());
 
     }
 }

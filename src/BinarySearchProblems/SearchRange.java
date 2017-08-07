@@ -3,7 +3,7 @@ package BinarySearchProblems;
 import java.util.ArrayList;
 
 /**
- * Created by dharabavishi on 6/21/17.
+ * Created by ruchitmehta on 6/21/17.
  * https://www.interviewbit.com/problems/search-for-a-range/
  */
 public class SearchRange {

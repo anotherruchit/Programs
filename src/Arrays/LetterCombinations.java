@@ -24,6 +24,7 @@ public class LetterCombinations {
 
     }
 
+    // Recursive Approach
     static void makeCombinations(ArrayList<ArrayList<Integer>> kSet, ArrayList<Integer> currSet){
 
         int length = currSet.size(); // 1
@@ -34,12 +35,10 @@ public class LetterCombinations {
 
             for(int i = 0; i < currSet.size(); i++){
                 System.out.print(currSet.get(i) + " ");
-
             }
             System.out.println();
             return;
         }
-
 
         List<Integer> processSet = kSet.get(length);
 

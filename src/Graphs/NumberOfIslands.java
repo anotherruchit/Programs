@@ -4,16 +4,21 @@ package Graphs;
  * Created by ruchitmehta
  * http://www.geeksforgeeks.org/find-number-of-islands/
  * https://www.interviewbit.com/problems/black-shapes/
+ * Time Complexity: O(ROW x COL)
  */
 public class NumberOfIslands {
     private static final int  ROW = 5, COL = 5;
     public static void main(String args[]){
         int M[][]=  new int[][] {{1, 1, 0, 0, 0},
-                                {0, 1, 0, 0, 1},
-                                {1, 0, 0, 1, 1},
-                                {0, 0, 0, 0, 0},
-                                {1, 0, 1, 0, 1}
+                                 {0, 1, 0, 0, 1},
+                                 {1, 0, 0, 1, 1},
+                                 {0, 0, 0, 0, 0},
+                                 {1, 0, 1, 0, 1},
+                                 {1, 0, 1, 0, 1}
         };
+
+        System.out.println(M[0].length);
+        System.out.println(M.length);
         NumberOfIslands I = new NumberOfIslands();
         System.out.println("Number of islands is: "+ I.countIslands(M));
     }

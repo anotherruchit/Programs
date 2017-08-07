@@ -21,34 +21,40 @@ public class SurroundedRegions {
         if(board==null || board.length==0 || board[0].length==0)
             return;
 
-        int m=board.length;
-        int n=board[0].length;
+        int m=board.length; // row
+        int n=board[0].length; // col
 
-        System.out.println("board length " + m);
-        System.out.println("row length " + n);
+        System.out.println("row length " + m);
+        System.out.println("col length " + n);
+
+        // first row
         for(int j=0; j<n; j++){
             if(board[0][j]=='O'){
                 bfs(board, 0, j);
             }
         }
 
+        //  last row
         for(int j=0; j<n; j++){
             if(board[m-1][j]=='O'){
                 bfs(board, m-1, j);
             }
         }
 
+        // first column
         for(int i=0; i<m; i++){
             if(board[i][0]=='O'){
                 bfs(board, i, 0);
             }
         }
 
+        // last column
         for(int i=0; i<m; i++){
             if(board[i][n-1]=='O'){
                 bfs(board, i, n-1);
             }
         }
+
 
         for(int i=0; i<m; i++){
             for(int j=0; j<n; j++){

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by dharabavishi on 7/3/17.
+ * Created by ruchitmehta on 7/3/17.
  */
 public class JustifyText {
 
@@ -30,7 +30,7 @@ public class JustifyText {
             }
 
             StringBuilder builder = new StringBuilder();
-            int diff = last - index - 1;
+            int diff = last - index - 1;  // number of words
 
             // if last line or number of words in the line is 1 then left-justified
             if(last == words.length || diff == 0){

@@ -1,7 +1,7 @@
 package BinarySearchProblems;
 
 /**
- * Created by dharabavishi on 6/21/17.
+ * Created by ruchitmehta on 6/21/17.
  */
 public class BinarySearch {
 

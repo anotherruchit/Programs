@@ -7,12 +7,74 @@ import java.util.*;
  */
 public class Solution {
     public static void main(String args[]){
-        Solution ob = new Solution();
-        List<Integer> list = Arrays.asList(4,5,7,8);
-        System.out.println(ob.findMissingNumber(list));
+//        Solution ob = new Solution();
+//        List<Integer> list = Arrays.asList(4,5,7,8);
+//        System.out.println(ob.findMissingNumber(list));
+//
+//
+//        System.out.println("length of substring : " +ob.findLength("abcdafe"));
+
+        setArray(new int[]{1, 0, 0 , 4, 0 , 3, 0});
+        System.out.println();
+        setArrayInOrder(new int[]{1, 0, 0 , 4, 0 , 3, 0});
+
+        System.out.println();
+
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1,0,4,2,0,0,4));
+        list.remove(2);
+        for(int i : list){
+            System.out.print(i +" ");
+        }
+    }
 
 
-        System.out.println("length of substring : " +ob.findLength("abcdafe"));
+    static void setArrayInOrder(int[] array){
+
+        int start = 0;
+        int end = 1;
+        while(end < array.length - 1){
+            // find 0
+            while(array[start] != 0 && start < array.length-1){
+                start++;
+            }
+            // find non-zero
+            while(array[end] == 0 && end < array.length-1){
+                end++;
+            }
+
+            if(array[start] == 0 && array[end] != 0){
+                int temp = array[start];
+                array[start] = array[end];
+                array[end] = temp;
+            }
+        }
+
+        for(int i = 0; i < array.length; i++){
+            System.out.print(array[i] + " ");
+        }
+    }
+
+    static void setArray(int[] array){
+        int start = 0;
+        int end = array.length - 1;
+        while(start <= end){
+            while(array[start] != 0){
+                start++;
+            }
+            while(array[end] == 0){
+                end--;
+            }
+
+            int temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            start++;
+            end--;
+        }
+
+        for(int i = 0; i < array.length; i++){
+            System.out.print(array[i] + " ");
+        }
     }
 
     public int findMissingNumber(List<Integer> list){

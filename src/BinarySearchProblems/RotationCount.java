@@ -1,8 +1,8 @@
 package BinarySearchProblems;
 
 /**
- * Created by dharabavishi on 6/21/17.
- * https://www.interviewbit.com/problems/rotated-array/
+ * Created by ruchitmehta on 6/21/17.
+ * https://www.interviewbit.com/problems/rotated-array/  - smallest element in the sorted rotated array
  * https://www.youtube.com/watch?v=4qjprDkJrjY&feature=player_embedded
  */
 public class RotationCount {

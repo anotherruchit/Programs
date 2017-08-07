@@ -1,7 +1,7 @@
 package DynamicProgramming;
 
 /**
- * Created by dharabavishi on 7/1/17.
+ * Created by ruchitmehta
  * https://leetcode.com/problems/decode-ways/#/solutions
  */
 public class DecodeWays {

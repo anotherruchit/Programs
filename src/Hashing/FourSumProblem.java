@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.HashSet;
 
 /**
- * Created by dharabavishi on 6/27/17.
+ * Created by ruchitmehta on 6/27/17.
  * https://www.interviewbit.com/problems/4-sum/
  * https://github.com/nagajyothi/InterviewBit/blob/master/Hashing/FourSum.java
  */

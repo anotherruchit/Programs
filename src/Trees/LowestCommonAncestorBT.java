@@ -12,7 +12,6 @@ import java.util.function.Consumer;
  */
 public class LowestCommonAncestorBT {
     public static void main(String args[]){
-        List<Integer> list = new ArrayList<>();
         LowestCommonAncestorBT tree = new LowestCommonAncestorBT();
         TreeNode root = new TreeNode(6);
         TreeNode n1 = new TreeNode(3);
@@ -25,17 +24,19 @@ public class LowestCommonAncestorBT {
         n1.left = n3;
         n1.right = n4;
 
-        TreeNode n5 = new TreeNode(9);
-        n2.right = n5;
-        System.out.println(tree.lowestCommonAncestor(root, n3, n1).data);
+        TreeNode n5 = new TreeNode(12);
+        TreeNode n6 = new TreeNode(15);
+        n2.left = n5;
+        n2.right = n6;
+        System.out.println(tree.lowestCommonAncestor(root, n3, n4).data);
 
-        List<Integer> alist = Arrays.asList(1,2,3,4,5);
     }
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode n1, TreeNode n2){
 
         if(root == null)
-            return root;
+            return null;
+
         if((root.data == n1.data) || (root.data == n2.data))
             return root;
 

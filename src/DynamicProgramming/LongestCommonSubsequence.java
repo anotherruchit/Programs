@@ -1,7 +1,7 @@
 package DynamicProgramming;
 
 /**
- * Created by dharabavishi on 7/2/17.
+ * Created by ruchitmehta on 7/2/17.
  * http://www.geeksforgeeks.org/dynamic-programming-set-4-longest-common-subsequence/
  *
  * LCS for input Sequences “ABCDGH” and “AEDFHR” is “ADH” of length 3.
@@ -35,7 +35,7 @@ public class LongestCommonSubsequence {
      /* Dynamic Programming implementation -> https://www.youtube.com/watch?v=NnD96abizww */
      /* Time Complexity of the above implementation is O(mn) which
      is much better than the worst case time complexity of Naive Recursive implementation. */
-    public int lcsMemoizatin(char[] X, char[] Y, int m, int n){
+    public int lcsMemoization(char[] X, char[] Y, int m, int n){
         int L[][] = new int[m+1][n+1];
 
          /* Following steps build L[m+1][n+1] in bottom up fashion. Note
@@ -110,7 +110,7 @@ public class LongestCommonSubsequence {
         int n = Y.length;
 
         System.out.println("Length of LCS by recursion approach - " + seq.lcs(X, Y, m, n));
-        System.out.println("Length of LCS by dynamic programming approach - " + seq.lcsMemoizatin(X, Y, m, n));
+        System.out.println("Length of LCS by dynamic programming approach - " + seq.lcsMemoization(X, Y, m, n));
     }
 
 }
