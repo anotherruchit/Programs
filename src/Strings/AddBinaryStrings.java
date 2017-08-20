@@ -3,7 +3,7 @@ package Strings;
 import java.util.ArrayList;
 
 /**
- * Created by dharabavishi on 7/4/17.
+ * Created by ruchitmehta on 7/4/17.
  */
 public class AddBinaryStrings {
     public static void main(String args[]){

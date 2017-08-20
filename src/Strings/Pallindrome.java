@@ -1,7 +1,7 @@
 package Strings;
 
 /**
- * Created by dharabavishi on 7/2/17.
+ * Created by ruchitmehta on 7/2/17.
  * https://www.interviewbit.com/problems/palindrome-string/
  */
 public class Pallindrome {

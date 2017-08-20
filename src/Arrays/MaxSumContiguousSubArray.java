@@ -1,6 +1,7 @@
 package Arrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -12,16 +13,7 @@ import java.util.List;
 public class MaxSumContiguousSubArray {
     public static void main(String args[]){
         MaxSumContiguousSubArray sub = new MaxSumContiguousSubArray();
-        List<Integer> array = new ArrayList<>();
-        array.add(-2);
-        array.add(-1);
-        array.add(0);
-        array.add(1);
-        array.add(-1);
-        array.add(2);
-        array.add(3);
-        array.add(-2);
-        array.add(4);
+        List<Integer> array = new ArrayList<>(Arrays.asList(-2, -1, 0, 1, -1, 2, 3, -2, 4));
         System.out.println(sub.maxSubArray(array));
     }
 

@@ -25,15 +25,18 @@ public class CopyLinkedList {
 
         head.random = n3;
         n1.random = n4;
-        n2.random = n1;
-        n3.random = n3;
+        n2.random = null;
+        n3.random = n4;
         n4.random = n2;
 
         CopyLinkedList linkedList = new CopyLinkedList();
         Node newHead = linkedList.copyRandomList(head);
 
-        System.out.println("random pointer -> " + newHead.random.x);
-
+        System.out.println("random pointer -> " + newHead.random.data);
+        while(newHead != null){
+            System.out.println(newHead.data);
+            newHead = newHead.random;
+        }
 
     }
 
@@ -49,7 +52,7 @@ public class CopyLinkedList {
         newHead = null;
 
         while(node != null){
-            newNode = new Node(node.x);
+            newNode = new Node(node.data);
 
             if(newHead == null){
                 newHead = newNode;
@@ -64,24 +67,23 @@ public class CopyLinkedList {
             newNode = entry.getValue();
 
             if(node.next != null){
-                newNode.next = hashMap.get(node.next);
+                newNode.next = node.next;
             }
 
             if(node.random != null){
-                newNode.random = hashMap.get(node.random);
+                newNode.random = node.random;
             }
         }
 
         return newHead;
-
     }
 }
 
 class Node{
     Node next, random;
-    int x;
+    int data;
 
     public Node(int x){
-        this.x = x;
+        this.data = x;
     }
 }

@@ -5,23 +5,23 @@ package Trees;
  */
 public class CountLeafNodes {
     public static void main(String args[]){
-        TreeNode root = new TreeNode(2);
-        TreeNode n1 = new TreeNode(3);
-        TreeNode n2 = new TreeNode(4);
-        root.left = n1;
-        root.right = n2;
+            TreeNode root = new TreeNode(2);
+            TreeNode n1 = new TreeNode(3);
+            TreeNode n2 = new TreeNode(4);
+            root.left = n1;
+            root.right = n2;
 
-        // left subtree
-        TreeNode n3 = new TreeNode(1);
-        TreeNode n4 = new TreeNode(6);
-        n1.left = n3;
-        n1.right = n4;
+            // left subtree
+            TreeNode n3 = new TreeNode(1);
+            TreeNode n4 = new TreeNode(6);
+            n1.left = n3;
+            n1.right = n4;
 
-        TreeNode n5 = new TreeNode(2);
-        n4.right = n5;
+            TreeNode n5 = new TreeNode(2);
+            n4.right = n5;
 
-        TreeNode n6 = new TreeNode(7);
-        n2.right = n6;
+            TreeNode n6 = new TreeNode(7);
+            n2.right = n6;
 
         System.out.println("Leaf Nodes " + countLeafNodes(root));
         System.out.println("Total Number of Nodes " + countNodes(root));

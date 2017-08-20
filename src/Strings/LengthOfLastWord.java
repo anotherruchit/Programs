@@ -1,7 +1,7 @@
 package Strings;
 
 /**
- * Created by dharabavishi on 7/2/17.
+ * Created by ruchitmehta on 7/2/17.
  * https://www.interviewbit.com/problems/length-of-last-word/
  */
 public class LengthOfLastWord {
@@ -27,7 +27,7 @@ public class LengthOfLastWord {
         }
 
         endIndex = i;
-        System.out.println("value of endindex = " + endIndex);
+        System.out.println("value of end index = " + endIndex);
 
         for (; i >= 0; i--) {
 

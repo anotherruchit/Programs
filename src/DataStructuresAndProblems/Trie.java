@@ -1,4 +1,4 @@
-package Trees;
+package DataStructuresAndProblems;
 
 import java.util.Map;
 

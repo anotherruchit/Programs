@@ -55,9 +55,6 @@ public class BFS {
                     queue.offer(n);
                 }
             }
-
         }
     }
-
-
 }

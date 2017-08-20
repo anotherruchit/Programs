@@ -10,6 +10,8 @@ import java.util.List;
  * https://leetcode.com/articles/longest-increasing-subsequence/
  * Note : the requirement is subsequence and not subarray. Compare it with
  * http://blog.gainlo.co/index.php/2017/02/02/uber-interview-questions-longest-increasing-subarray/
+ * DP - https://www.youtube.com/watch?v=CE2b_-XfVDk
+ * Binary Search - https://www.youtube.com/watch?v=S9oUiVYEq7E
  */
 public class LongestIncreasingSubsequence {
     public static void main(String args[])
@@ -79,15 +81,6 @@ public class LongestIncreasingSubsequence {
                 result.set(end, num);
             }
         }
-
-//        List<Integer> abc = Arrays.asList(1,2,3,4);
-////        ArrayList<Integer> list = abc.
-//        Iterator it = abc.iterator();
-//        System.out.println("printing");
-//        while(it.hasNext()){
-//            System.out.println(it.next());
-//        }
-
 
         return result.size();
 

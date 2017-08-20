@@ -9,7 +9,7 @@ import java.util.LinkedList;
 public class DeleteNodeLinkedList {
     public static void main(String args[]){
         ListNode n1 = new ListNode(1);
-        ListNode n2 = new ListNode(2);
+        ListNode n2 = new ListNode(4);
         ListNode n3 = new ListNode(3);
         ListNode n4 = new ListNode(4);
         ListNode n5 = new ListNode(5);
@@ -24,10 +24,6 @@ public class DeleteNodeLinkedList {
             System.out.print(head.intData + " ");
             head = head.next;
         }
-
-        List<Integer> list = new LinkedList<>();
-
-
     }
 
     static ListNode removeNodes(ListNode list, int x) {

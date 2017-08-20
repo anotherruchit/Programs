@@ -3,7 +3,7 @@ package Strings;
 import java.util.Arrays;
 
 /**
- * Created by dharabavishi on 7/3/17.
+ * Created by ruchitmehta on 7/3/17.
  * https://www.interviewbit.com/problems/compare-version-numbers/
  */
 public class CompareVersions {

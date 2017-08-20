@@ -7,7 +7,6 @@ package Arrays;
 public class SizeKSubset {
     public static void main(String args[]){
         int[] array = {1,2,3,4};
-        int k = 2;
         boolean[] used = new boolean[array.length];
 
         printAllSizeKSubset(array, used, 0, 0, 3);

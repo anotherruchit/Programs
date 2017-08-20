@@ -1,6 +1,7 @@
 package Hashing;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -19,15 +20,7 @@ public class ArraySum {
         }
     }
     public static void main(String args[]){
-        ArrayList<Integer> a =  new ArrayList<Integer>();
-        a.add(3);
-        a.add(4);
-        a.add(7);
-        a.add(1);
-        a.add(2);
-        a.add(9);
-        a.add(8);
-        System.out.println(a);
+        ArrayList<Integer> a =  new ArrayList<Integer>(Arrays.asList(3, 4, 7, 1, 2, 9, 8));
         ArrayList<Integer> result = new ArrayList<Integer>();
         ArraySum e = new ArraySum();
         result = e.equal(a);

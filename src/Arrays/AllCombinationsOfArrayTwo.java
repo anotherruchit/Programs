@@ -3,6 +3,7 @@ package Arrays;
 /**
  * Created by ruchitmehta
  * http://www.geeksforgeeks.org/print-all-combinations-of-given-length/
+ * Problem Statement - Print all possible strings of length k that can be formed from a set of n characters
  */
 public class AllCombinationsOfArrayTwo {
     public static void main(String args[]){

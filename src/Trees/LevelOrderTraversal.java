@@ -8,6 +8,8 @@ import java.util.List;
 /**
  * Created by ruchitmehta
  * http://www.programcreek.com/2014/04/leetcode-binary-tree-level-order-traversal-java/
+ * TODO: Use the below solution to implement -
+ * TODO: http://javabypatel.blogspot.in/2015/08/connect-nodes-at-same-level-in-binary-tree-using-constant-extra-space.html
  *
  */
 public class LevelOrderTraversal {

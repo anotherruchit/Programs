@@ -1,7 +1,7 @@
 package Strings;
 
 /**
- * Created by dharabavishi on 7/2/17.
+ * Created by ruchitmehta on 7/2/17.
  * https://www.interviewbit.com/problems/reverse-the-string/
  *  A sequence of non-space characters constitutes a word.
     Your reversed string should not contain leading or trailing spaces, even if it is present in the input string.

@@ -3,14 +3,14 @@ package BinarySearchProblems;
 /**
  * Created by ruchitmehta on 6/21/17.
  * https://www.interviewbit.com/problems/count-element-occurence/
+ * Problem Statement: Given a sorted array of integers, find the number of occurrences of a given target value.
+ *                  If the target is not found in the array, return 0
  */
 public class CountElementOccurence {
     public static void main(String args[]){
         int[] array = {1, 3, 5, 5, 5, 5, 6, 12, 15};
         int firstIndex = countElementOccurence(array, array.length, 5, true);
-        System.out.println("Element found at location: " + firstIndex);
         int lastIndex = countElementOccurence(array, array.length, 5, false);
-        System.out.println("Element found at location: " + lastIndex);
         System.out.println("Total number of occurences of the elemnts are: " + (lastIndex - firstIndex + 1));
     }
 

@@ -24,7 +24,10 @@ public class LetterCombinations {
 
     }
 
-    // Recursive Approach
+    /*
+        Recursive Approach
+        TODO: Make this function similar to the Iterative function and the output should also be same
+     */
     static void makeCombinations(ArrayList<ArrayList<Integer>> kSet, ArrayList<Integer> currSet){
 
         int length = currSet.size(); // 1
@@ -50,6 +53,9 @@ public class LetterCombinations {
 
     }
 
+    /*
+        Iterative Approach
+     */
     public void phoneNumberCombinations(String number){
 
         String[] mapping = new String[]{"0", "1", "abc", "def", "ghi", "jkl", "mno" ,"pqrs", "tuv", "wxyz"};
@@ -68,9 +74,6 @@ public class LetterCombinations {
         }
 
         System.out.println(queue.toString());
-        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
-        HashMap<Integer, ArrayList<String>> map = new HashMap<>();
-        map.put(1, new ArrayList<>(Arrays.asList("s", "b", "s")));
     }
 
 

@@ -2,6 +2,8 @@ package Arrays;
 
 /**
  * Created by ruchitmehta
+ *
+ * Power Set
  * https://www.youtube.com/watch?v=p8SDPaX1wgw
  * Time Complexity - 2^n , where n is number of elements in the array.
  * To handle duplicate elements, sort the array and do the steps mentioned here http://www.geeksforgeeks.org/print-all-possible-combinations-of-r-elements-in-a-given-array-of-size-n/

@@ -1,7 +1,7 @@
 package Strings;
 
 /**
- * Created by dharabavishi on 7/2/17.
+ * Created by ruchitmehta on 7/2/17.
  */
 public class ReverseWord {
     public static void main(String args[]){

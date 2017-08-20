@@ -1,7 +1,7 @@
 package DynamicProgramming;
 
 /**
- * Created by dharabavishi on 7/1/17.
+ * Created by ruchitmehta on 7/1/17.
  * https://www.interviewbit.com/problems/jump-game-array/
  *
 

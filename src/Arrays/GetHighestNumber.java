@@ -1,14 +1,13 @@
 package Arrays;
 
-import java.util.Arrays;
-
 /**
  * Created by ruchitmehta
+ * Interview Question
  */
 public class GetHighestNumber {
     public static void main(String args[]){
         GetHighestNumber number = new GetHighestNumber();
-        number.getLargest(4123);
+        System.out.println(number.getLargest(824199323));
     }
 
     public int getLargest(int number){
@@ -23,22 +22,23 @@ public class GetHighestNumber {
         }
 
         for(int i = 0 ; i < num.length(); i++){
-            System.out.println("processing for : " + Character.getNumericValue(num.charAt(i)));
+//            System.out.println("processing for : " + Character.getNumericValue(num.charAt(i)));
             digits[Character.getNumericValue(num.charAt(i))] = Character.getNumericValue(num.charAt(i));
             repeat[Character.getNumericValue(num.charAt(i))]++;
         }
 
-        System.out.println(Arrays.toString(digits));
-        System.out.println(Arrays.toString(repeat));
+//        System.out.println(Arrays.toString(digits));
+//        System.out.println(Arrays.toString(repeat));
 
         StringBuilder builder = new StringBuilder();
 
-        for(int i = 0; i < 10; i++){
+        for(int i = digits.length-1; i >= 0; i--){
             if(digits[i] != -1){
-
+                for(int k = 0; k < repeat[i]; k++){
+                    builder.append((digits[i]));
+                }
             }
         }
-
-        return 0;
+        return Integer.parseInt(builder.toString());
     }
 }

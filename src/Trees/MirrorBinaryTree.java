@@ -4,6 +4,7 @@ import java.util.Stack;
 
 /**
  * Created by ruchitmehta on 7/30/17.
+ * Application of Mirror Tree - http://javabypatel.blogspot.com/2017/02/check-whether-tree-is-foldable-or-not.html
  */
 public class MirrorBinaryTree {
     public static void main(String args[]){
@@ -30,29 +31,6 @@ public class MirrorBinaryTree {
         System.out.println();
         inOrderTraversal(newRoot);
         System.out.println();
-
-//        TreeNode root1 = new TreeNode(2);
-//        TreeNode n11 = new TreeNode(3);
-//        TreeNode n21 = new TreeNode(4);
-//        root1.right = n11;
-//        root1.left = n21;
-//
-//        // left subtree
-//        TreeNode n31 = new TreeNode(1);
-//        TreeNode n41 = new TreeNode(6);
-//        n11.right = n31;
-//        n11.left = n41;
-//
-//        TreeNode n51 = new TreeNode(12);
-//        n41.left = n51;
-//
-//        TreeNode n61 = new TreeNode(7);
-//        n21.left = n61;
-//
-//        inOrderTraversal(root1);
-////        System.out.println(isMirrorTree(root, root1));
-//
-//        MirrorBinaryTree tree = new MirrorBinaryTree();
         System.out.println(isMirrorTree(root, newRoot));
     }
 

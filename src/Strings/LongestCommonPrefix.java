@@ -3,8 +3,9 @@ package Strings;
 import java.util.ArrayList;
 
 /**
- * Created by dharabavishi on 7/2/17.
+ * Created by ruchitmehta on 7/2/17.
  * https://www.interviewbit.com/problems/longest-common-prefix/
+ * https://leetcode.com/problems/longest-common-prefix/solution/#approach-3-divide-and-conquer
  */
 public class LongestCommonPrefix {
 
@@ -17,6 +18,12 @@ public class LongestCommonPrefix {
         System.out.println(longestCommonPrefix(list));
     }
 
+    /*
+    https://leetcode.com/problems/longest-common-prefix/solution/#approach-3-divide-and-conquer
+    Approach 2 - Vertical Scanning
+    Time Complexity - O(S) where S is sum of all chars in all strings
+    Space Complexity - O(1)
+     */
     public static String longestCommonPrefix(ArrayList<String> list){
         if(list.size() == 0)
             return "";
