@@ -5,6 +5,8 @@ import java.util.List;
 
 /**
  * Created by ruchitmehta on 8/9/17.
+ * https://leetcode.com/problems/generate-parentheses/
+ * Problem Statement: Given n, write a function to generate all n-pairs of combinations of well-formed parentheses.
  */
 public class GenerateParanthesis {
     public static void main(String args[]){
@@ -16,7 +18,7 @@ public class GenerateParanthesis {
 
     static List<String> generatePranthesis(int n){
         List<String> result = new ArrayList<>();
-        generate(result, "", 3, 3);
+        generate(result, "", n, n);
         return result;
     }
 

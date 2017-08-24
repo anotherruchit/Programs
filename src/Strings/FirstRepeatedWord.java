@@ -4,7 +4,9 @@ import java.util.HashSet;
 
 /**
  * Created by ruchitmehta
- * hackerrank test 2 - codepath
+ * hackerrank test 2 - Codepath
+ * Problem Statement: String can contain multiple spaces, so form the manually by parsing the string and find the first
+ *                  repeated word in the string.
  */
 public class FirstRepeatedWord {
     public static void main(String args[]){

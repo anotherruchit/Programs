@@ -4,6 +4,8 @@ package Strings;
  * Created by ruchitmehta on 8/8/17.
  * http://www.geeksforgeeks.org/print-all-interleavings-of-given-two-strings/
  * http://javabypatel.blogspot.in/2016/03/print-all-interleaving-of-given-two-strings.html
+ * Problem statement - Given two strings str1 and str2, write a function that prints all interleavings of the given
+ *                   two strings. You may assume that all characters in both strings are different
  */
 public class InterweavingStrings {
     public static void main(String args[]){

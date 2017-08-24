@@ -1,5 +1,7 @@
 package Strings;
 
+import java.util.HashMap;
+
 /**
  * Created by ruchitmehta on 8/15/17.
  * Find all the Anagrams of a particular string in the another string
@@ -23,6 +25,7 @@ public class AnagramSubstringSearch {
             needleCount[needle.charAt(i)]++;
             haystackCount[haystack.charAt(i)]++;
         }
+
         int i;
         for(i = needle.length(); i < haystack.length(); i++){
             // Compare counts of current window of haystack with

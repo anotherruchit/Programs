@@ -29,7 +29,7 @@ public class RearragenStringKDistance {
             }
         }
 
-        //sort the chars by frequency
+        //sort the chars by frequency (Descending order)
         PriorityQueue<Character> queue = new PriorityQueue<Character>(new Comparator<Character>(){
             public int compare(Character c1, Character c2){
                 // if the count for 2 character is different
@@ -45,7 +45,7 @@ public class RearragenStringKDistance {
             }
         });
 
-
+        // Put all the characters from HashMap into PriorityQueue
         for(char c: map.keySet())
             queue.offer(c);
 

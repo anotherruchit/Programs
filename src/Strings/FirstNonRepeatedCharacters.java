@@ -1,7 +1,5 @@
 package Strings;
 
-import java.util.Arrays;
-
 /**
  * Created by ruchitmehta on 8/12/17.
  * https://www.careercup.com/question?id=5754891470372864
@@ -27,6 +25,10 @@ public class FirstNonRepeatedCharacters {
        then returns -1 */
     static char firstNonRepeating(String str)
     {
+        if(str.length() == 0 || str == null){
+            return ' ';
+        }
+
         getCharCountArray(str);
         int index = -1, i;
 

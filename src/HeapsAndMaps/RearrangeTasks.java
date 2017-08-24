@@ -5,8 +5,13 @@ import java.util.*;
 /**
  * Created by ruchitmehta
  * https://www.careercup.com/question?id=5653760530448384 // check the other solution in RearrageStringKDistance.java
+ * Ipsy Interview Question
  */
 public class RearrangeTasks {
+    public static void main(String[] args) {
+        taskSequence("ABDCCCCBBBBA");
+        taskSequence("ABBBAA");
+    }
 
     private static void taskSequence(String input) {
         char[] arr = input.toCharArray();
@@ -67,10 +72,5 @@ public class RearrangeTasks {
 
         System.out.println();
 
-    }
-
-    public static void main(String[] args) {
-        taskSequence("ABDCCCCBBBBA");
-        taskSequence("ABBBAA");
     }
 }

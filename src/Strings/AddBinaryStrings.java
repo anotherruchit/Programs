@@ -1,7 +1,5 @@
 package Strings;
 
-import java.util.ArrayList;
-
 /**
  * Created by ruchitmehta on 7/4/17.
  */
@@ -16,17 +14,17 @@ public class AddBinaryStrings {
         while (i >= 0 || j >= 0) {
             int sum = carry;
             if (j >= 0){
-                System.out.println("Bchar "+ b.charAt(j));
-                System.out.println("sum is " + (b.charAt(j--) - '0'));
+//                System.out.println("Bchar "+ b.charAt(j));
+//                System.out.println("sum is " + (b.charAt(j--) - '0'));
                 sum += b.charAt(j--) - '0';
             }
             if (i >= 0){
-                System.out.println("Bchar "+ b.charAt(i));
-                System.out.println("sum is " + (a.charAt(i--) - '0'));
+//                System.out.println("Bchar "+ b.charAt(i));
+//                System.out.println("sum is " + (a.charAt(i--) - '0'));
                 sum += a.charAt(i--) - '0';
             }
-            System.out.println("mod is " + (sum % 2));
-            System.out.println("division is " + (sum / 2));
+//            System.out.println("mod is " + (sum % 2));
+//            System.out.println("division is " + (sum / 2));
             sb.append(sum % 2);
             carry = sum / 2;
         }
