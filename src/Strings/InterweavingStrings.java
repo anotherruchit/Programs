@@ -26,14 +26,16 @@ public class InterweavingStrings {
             return;
         }
 
-        //if string 1 and string 2 length became 0, it means all characters from str1 and str2 is present in interleaving, print interleavingString.
+        //if string 1 and string 2 length became 0, it means all characters from str1 and str2 is present in interleaving,
+        // print interleavingString.
         if(str1.length() == 0 && str2.length() == 0){
             System.out.println(interweaving);
         }
 
         //pick characters from string 1 until string 1 length is empty.
         if(str1.length() > 0){
-            //pick character from string 1 and append it in interleavingString string. In next recursive call remove picked character from string 1.
+            //pick character from string 1 and append it in interleavingString string. In next recursive call remove
+            // picked character from string 1.
             interweavingStrings(str1.substring(1), str2, interweaving + str1.charAt(0));
         }
 

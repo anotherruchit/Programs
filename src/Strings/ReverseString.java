@@ -75,6 +75,6 @@ public class ReverseString {
             array[end - i] = temp;
         }
 
-        System.out.println(String.valueOf(array));
+        System.out.println("word : " + String.valueOf(array));
     }
 }

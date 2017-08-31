@@ -3,6 +3,8 @@ package Strings;
 /**
  * Created by ruchitmehta on 7/2/17.
  * https://www.interviewbit.com/problems/length-of-last-word/
+ * Problem statement: Given a string s consists of upper/lower-case alphabets and empty space characters ' ',
+ *                  return the length of last word in the string.
  */
 public class LengthOfLastWord {
     public static void main(String args[]){

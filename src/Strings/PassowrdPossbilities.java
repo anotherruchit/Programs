@@ -5,6 +5,8 @@ import java.util.HashSet;
 /**
  * Created by ruchitmehta on 8/12/17.
  * https://www.careercup.com/question?id=5157687156277248
+ * Problem Statement: Password Suggestor: Replace s with $ and a with @ and produce all password suggestions.
+ *                  Example: P@ssword, P@$$word,pas$word
  */
 public class PassowrdPossbilities {
     private static HashSet<String> possibilities = new HashSet<>();

@@ -3,6 +3,8 @@ package Strings;
 /**
  * Created by ruchitmehta on 7/2/17.
  * https://www.interviewbit.com/problems/palindrome-string/
+ * Problem statement: Given a string, determine if it is a palindrome, considering only alphanumeric characters and
+ *                  ignoring cases
  */
 public class Pallindrome {
     public static void main(String args[]){
