@@ -1,11 +1,11 @@
 package Graphs;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
  * Created by ruchitmehta
  * https://www.interviewbit.com/problems/capture-regions-on-board/
+ * Amazon Phone interview question
  */
 public class SurroundedRegions {
     public static void main(String args[]){

@@ -3,6 +3,8 @@ package Strings;
 /**
  * Created by ruchitmehta.
  * https://www.interviewbit.com/problems/count-and-say/
+ * Problem Statement: The count-and-say sequence is the sequence of integers beginning as follows:
+ *                  1, 11, 21, 1211, 111221, ...
  */
 public class CountAndSay {
 

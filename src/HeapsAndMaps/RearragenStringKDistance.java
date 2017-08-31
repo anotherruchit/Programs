@@ -33,7 +33,7 @@ public class RearragenStringKDistance {
         PriorityQueue<Character> queue = new PriorityQueue<Character>(new Comparator<Character>(){
             public int compare(Character c1, Character c2){
                 // if the count for 2 character is different
-                if(map.get(c2).intValue()!=map.get(c1).intValue()){
+                if(map.get(c2).intValue() != map.get(c1).intValue()){
 //                    System.out.print("Arranging characters -> " + c1 + " " + c2 + " with value ");
 //                    System.out.println(map.get(c1).intValue() + " " + map.get(c2).intValue());
                     return map.get(c2)-map.get(c1);

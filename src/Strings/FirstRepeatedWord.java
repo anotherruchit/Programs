@@ -22,7 +22,8 @@ public class FirstRepeatedWord {
             return "";
 
         for(int i = 0; i < str.length(); i++){
-            if(str.charAt(i) != ' ' && str.charAt(i) != '\t' && str.charAt(i) != '.' && str.charAt(i) != ':' && str.charAt(i) != ';' && str.charAt(i) != '-'){
+            if(str.charAt(i) != ' ' && str.charAt(i) != '\t' && str.charAt(i) != '.' && str.charAt(i) != ':' &&
+                    str.charAt(i) != ';' && str.charAt(i) != '-'){
                 builder.append(str.charAt(i));
             } else {
 

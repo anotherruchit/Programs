@@ -1,6 +1,5 @@
 package Strings;
 
-import java.util.Hashtable;
 
 /**
  * Created by ruchitmehta on 8/23/17.
@@ -21,7 +20,7 @@ public class AddBoldTag {
         boolean[] bold = new boolean[s.length()];
         for (int i = 0, end = 0; i < s.length(); i++) {
             for (String word : dict) {
-                if (s.startsWith(word, i)) {
+                if (s.startsWith(word, i)) { // startsWith(prefix, offset)
                     end = Math.max(end, i + word.length());
                 }
             }
@@ -35,7 +34,8 @@ public class AddBoldTag {
                 continue;
             }
             int j = i;
-            while (j < s.length() && bold[j]) j++;
+            while (j < s.length() && bold[j])
+                j++;
             result.append("<b>" + s.substring(i, j) + "</b>");
             i = j - 1;
         }
