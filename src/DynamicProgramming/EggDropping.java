@@ -10,7 +10,7 @@ public class EggDropping {
     public int calculate(int eggs, int floors){
 
         int T[][] = new int[eggs+1][floors+1];
-        int c =0;
+        int c = 0;
         for(int i=0; i <= floors; i++){
             T[1][i] = i;
         }

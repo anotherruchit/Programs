@@ -20,10 +20,10 @@ public class EditDistance {
         int m = word1.length();
         int n = word2.length();
 
-        if(word1.length() == 0)
-            return word2.length();
-        if(word2.length() == 0)
-            return word1.length();
+        if(m == 0)
+            return n;
+        if(n == 0)
+            return m;
 
         // Create a table to store results of subproblems
         int[][] cost = new int[m+1][n+1];

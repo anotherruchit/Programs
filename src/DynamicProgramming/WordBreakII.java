@@ -46,6 +46,7 @@ public class WordBreakII {
         }
     }
 
+    // array of Arraylist
     public void dfs(ArrayList<String> [] pos, ArrayList<String> result, String curr, int i){
         if(i==0){
             result.add(curr.trim());

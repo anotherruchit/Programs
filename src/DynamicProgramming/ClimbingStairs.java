@@ -3,7 +3,7 @@ package DynamicProgramming;
 import java.util.Arrays;
 
 /**
- * Created by dharabavishi on 7/1/17.
+ * Created by ruchitmehta on 7/1/17.
  * https://leetcode.com/articles/climbing-stairs/ (editorial solution)
  * https://www.interviewbit.com/problems/stairs/
  * https://www.youtube.com/watch?v=eREiwuvzaUM

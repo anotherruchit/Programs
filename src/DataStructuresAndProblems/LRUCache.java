@@ -31,6 +31,8 @@ public class LRUCache {
         head.prev = null;
         tail.next = null;
         count = 0;
+        Integer num;
+
     }
 
     /**
