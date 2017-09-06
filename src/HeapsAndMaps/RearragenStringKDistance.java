@@ -18,7 +18,7 @@ public class RearragenStringKDistance {
         if(k==0)
             return str;
 
-        //initialize the counter for each character
+        // Initialize the counter for each character
         final HashMap<Character, Integer> map = new HashMap<Character, Integer>();
         for(int i=0; i<str.length(); i++){
             char c = str.charAt(i);
@@ -29,7 +29,7 @@ public class RearragenStringKDistance {
             }
         }
 
-        //sort the chars by frequency (Descending order)
+        // Sort the chars by frequency (Descending order)
         PriorityQueue<Character> queue = new PriorityQueue<Character>(new Comparator<Character>(){
             public int compare(Character c1, Character c2){
                 // if the count for 2 character is different
@@ -50,7 +50,6 @@ public class RearragenStringKDistance {
             queue.offer(c);
 
         StringBuilder sb = new StringBuilder();
-
         int len = str.length();
 
         while(!queue.isEmpty()){
@@ -58,7 +57,7 @@ public class RearragenStringKDistance {
             int cnt = Math.min(k, len);
             ArrayList<Character> temp = new ArrayList<Character>();
 
-            for(int i=0; i<cnt; i++){
+            for(int i = 0; i < cnt; i++){
                 if(queue.isEmpty())
                     sb.append("_");
                 else {

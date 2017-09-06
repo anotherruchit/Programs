@@ -5,6 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by ruchitmehta on 8/3/17.
  * https://www.interviewbit.com/problems/gray-code/
+ *
  */
 public class GrayCode {
 
@@ -12,6 +13,7 @@ public class GrayCode {
         GrayCode code = new GrayCode();
 
         System.out.println(code.grayCode(3).toString());
+
     }
 
     public ArrayList<Integer> grayCode(int A) {
@@ -30,6 +32,8 @@ public class GrayCode {
 
         ArrayList<Integer> gray = solve(n - 1);
         int num;
+
+        System.out.println("Gray arraylist is " + gray.toString());
 
         for (int i = gray.size() - 1; i >= 0; i--) {
             num = gray.get(i);

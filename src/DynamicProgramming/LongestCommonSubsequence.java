@@ -10,9 +10,7 @@ package DynamicProgramming;
 public class LongestCommonSubsequence {
 
     /* 1) Optimal Substructure: --> Recursive solution */
-
     /* Returns length of LCS for X[0..m-1], Y[0..n-1] */
-
     /*Time complexity of the above naive recursive approach is O(2^n) in worst case and
     worst case happens when all characters of X and Y mismatch i.e., length of LCS is 0. */
     public int lcs(char[] X, char[] Y, int m, int n){
@@ -93,7 +91,7 @@ public class LongestCommonSubsequence {
 
         // Print the lcs
         System.out.print("LCS of "+String.valueOf(X) +" and "+String.valueOf(Y)+" is ");
-        for(int k=0;k<temp;k++)
+        for(int k = 0; k < temp; k++)
             System.out.print(lcs[k]);
         System.out.println();
 

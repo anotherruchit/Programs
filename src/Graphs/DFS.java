@@ -11,9 +11,8 @@ public class DFS {
     public int V; // number of vertices
     public LinkedList<Integer> adjacency[];
 
-    //constructor
     public DFS(int v){
-        V = v;
+        this.V = v;
         adjacency = new LinkedList[V];
         for(int i = 0; i < V; i++){
             adjacency[i] = new LinkedList<>();
@@ -30,7 +29,7 @@ public class DFS {
 
         // Mark the current node as visited and print it
         visited[v] = true;
-        System.out.print(v+" ");
+        System.out.print(v + " ");
 
         Iterator<Integer> it = adjacency[v].iterator();
         while(it.hasNext()){

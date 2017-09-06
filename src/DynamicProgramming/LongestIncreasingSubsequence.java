@@ -45,7 +45,6 @@ public class LongestIncreasingSubsequence {
                 }
             }
         }
-
          /* Pick maximum of all LIS values */
         for(i = 0; i < n; i++){
             if(max < lis[i])
@@ -74,7 +73,7 @@ public class LongestIncreasingSubsequence {
                 while(start < end){
                     mid = (start + end)/2;
                     if(num > result.get(mid))
-                        start = mid+1;
+                        start = mid + 1;
                     else
                         end = mid;
                 }

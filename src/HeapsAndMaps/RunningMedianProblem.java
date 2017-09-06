@@ -59,8 +59,10 @@ public class RunningMedianProblem {
         PriorityQueue<Integer> smallerHeap = lowers.size() > highers.size() ? highers : lowers;
 
         if(biggerHeap.size() == smallerHeap.size()){
+            // Even number of elements in the array, so in that case average of middle 2 elements
             return (double)(biggerHeap.peek() + smallerHeap.peek()) / 2;
         } else {
+            // Odd number of elements in the array
             return biggerHeap.peek();
         }
     }

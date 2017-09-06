@@ -4,7 +4,7 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 /**
- * Created by dharabavishi on 6/15/17.
+ * Created by ruchitmehta on 6/15/17.
  * https://www.interviewbit.com/problems/2-sum/
  */
 public class TwoSum {

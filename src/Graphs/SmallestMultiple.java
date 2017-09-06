@@ -5,6 +5,8 @@ import java.util.Queue;
 
 /**
  * Created by ruchitmehta
+ * https://www.interviewbit.com/problems/smallest-multiple-with-0-and-1/
+ * check this out: http://www.geeksforgeeks.org/find-the-smallest-binary-digit-multiple-of-given-number/
  * TODO: remaining
  *
  */

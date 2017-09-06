@@ -7,6 +7,9 @@ import java.util.Queue;
  * Created by ruchitmehta
  * http://www.geeksforgeeks.org/stepping-numbers/
  * https://www.interviewbit.com/problems/stepping-numbers/
+ * Problem statement: Given N and M find all stepping numbers in range N to M
+ *                  A number is called as a stepping number if the adjacent digits have a difference of 1.
+                    e.g 123 is stepping number, but 358 is not a stepping number
  */
 public class SteppingNumbers {
     public static void main(String args[]){

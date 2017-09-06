@@ -5,8 +5,12 @@ import java.util.Collections;
 import java.util.HashSet;
 
 /**
- * Created by dharabavishi on 6/27/17.
+ * Created by ruchitmehta on 6/27/17.
  * https://www.interviewbit.com/problems/colorful-number/
+ * Problem Statement: A number can be broken into different contiguous sub-subsequence parts.
+                    Suppose, a number 3245 can be broken into parts like 3 2 4 5 32 24 45 324 245.
+                    And this number is a COLORFUL number, since product of every digit of a contiguous subsequence is different
+ TODO:
  */
 public class ColourfulNumber {
 

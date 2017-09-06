@@ -16,6 +16,19 @@ public class ConnectedCells {
 
     }
 
+    static int getRegion(char[][] board){
+        int maxRegionSize = 0;
+        for(int r = 0; r < board.length; r++){
+            for(int c = 0; c < board[0].length; c++){
+                if(board[r][c] == '1'){
+                    int size = dfs(board, r, c);
+                    maxRegionSize = Math.max(maxRegionSize, size);
+                }
+            }
+        }
+        return maxRegionSize;
+    }
+
     static int dfs(char[][] board, int row, int col){
 
         if(row < 0 || col < 0 || row >= board.length || col >= board[0].length)
@@ -35,19 +48,5 @@ public class ConnectedCells {
         }
         return size;
     }
-
-    static int getRegion(char[][] board){
-        int maxRegionSize = 0;
-        for(int r = 0; r < board.length; r++){
-            for(int c = 0; c < board[0].length; c++){
-                if(board[r][c] == '1'){
-                    int size = dfs(board, r, c);
-                    maxRegionSize = Math.max(maxRegionSize, size);
-                }
-            }
-        }
-        return maxRegionSize;
-    }
-
 
 }

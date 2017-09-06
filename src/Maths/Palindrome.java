@@ -4,10 +4,10 @@ package Maths;
  * Created by ruchitmehta on 8/8/17.
  * http://javabypatel.blogspot.com/2017/05/check-number-is-palindrome-in-java.html
  */
-public class Pallindrome {
+public class Palindrome {
     public static void main(String args[]){
         if(isPallindrome(432344))
-            System.out.println("Number is Pallindrome");
+            System.out.println("Number is Palindrome");
         else
             System.out.println("Number is not Pallindrime");
 

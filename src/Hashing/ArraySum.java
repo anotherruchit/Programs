@@ -5,8 +5,10 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 /**
- * Created by dharabavishi on 6/27/17.
+ * Created by ruchitmehta on 6/27/17.
  * https://www.interviewbit.com/problems/equal/
+ * Problem statement: Given an array A of integers, find the index of values that satisfy A + B = C + D,
+ *                  where A,B,C & D are integers values in the array
  */
 public class ArraySum {
 

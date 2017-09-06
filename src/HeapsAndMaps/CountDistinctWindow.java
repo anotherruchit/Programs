@@ -3,7 +3,7 @@ package HeapsAndMaps;
 import java.util.HashMap;
 
 /**
- * Created by dharabavishi on 6/28/17.
+ * Created by ruchitmehta on 6/28/17.
  * https://www.interviewbit.com/problems/distinct-numbers-in-window/
  * Problem statement: You are given an array of N integers, A1, A2 ,…, AN and an integer K.
  *                  Return the of count of distinct numbers in all windows of size K.

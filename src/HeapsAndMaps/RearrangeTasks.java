@@ -4,7 +4,8 @@ import java.util.*;
 
 /**
  * Created by ruchitmehta
- * https://www.careercup.com/question?id=5653760530448384 // check the other solution in RearrageStringKDistance.java
+ * https://www.careercup.com/question?id=5653760530448384
+ *     check the other solution in RearrageStringKDistance.java
  * Ipsy Interview Question
  */
 public class RearrangeTasks {
